@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "welcome to cfscan"
+echo "welcome to cfscan! installing pakages..."
 
-curl -s -o ranges.txt "https://raw.githubusercontent.com/alinasrollahzadeh405-sudo/cfscan/main/ranges.txt"
+apt update && apt upgrade -y && apt install nmap curl prips -y &&curl -s -o ranges.txt "https://raw.githubusercontent.com/alinasrollahzadeh405-sudo/cfscan/main/ranges.txt"
 
 rm -f ipcf.txt
 
