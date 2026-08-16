@@ -7,7 +7,7 @@ a litewate, fast, and powerfull cloudflare clean ip scanner!
 for termux, use this command befor installing script:
 
 ```bash
-pkg update && pkg upgrade -y && pkg install proot-distro -y ; termux-setup-storage
+pkg update && pkg upgrade -y && pkg install proot-distro -y && proot-distro install ubuntu && proot-distro login ubuntu ; termux-setup-storage
 ```
 
 and grant files access.
