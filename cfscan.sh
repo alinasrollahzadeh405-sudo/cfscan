@@ -29,9 +29,7 @@ while read -r ranges; do
         echo "scanning ips..."
 
         if nmap "$ip" -p "$port" &> /dev/null; then
-            echo "ip is alive! testing icmp..."
-            if ping -c4 -W 4 "$ip" &> /dev/null; then
-                echo "icmp is ok! ip saved!"
+            echo "ip is alive! ip saved!"
                 echo "$ip" >> ipcf.txt
                 
                 found_count=$((found_count + 1))
@@ -41,7 +39,6 @@ while read -r ranges; do
                     echo "Target reached successfully! Exiting..."
                     exit 0
                 fi
-            fi
-        fi
+              fi
     done
 done < ranges.txt
