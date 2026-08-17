@@ -18,7 +18,7 @@ curl -s -o cfscan.sh https://raw.githubusercontent.com/alinasrollahzadeh405-sudo
 
 ### how it works?
 
-this script generates random ips from cf official ranges, tests port and icmp founded ips, and saves best ips in a text file.
+this script generates random ips from cf official ranges, tests port and tcp ping founded ips, and saves best ips in a text file.
 
 ### notes:
 
