@@ -4,13 +4,11 @@ a litewate, fast, and powerfull cloudflare clean ip scanner!
 
 ### importent:
 
-for termux, use this command befor installing script, use this command and grant files access:
+for termux, use this command befor installing script and grant files access:
 
 ```bash
 termux-setup-storage && pkg update && pkg upgrade -y && pkg install proot-distro -y && proot-distro install ubuntu && proot-distro login ubuntu
 ```
-
-and grant files access.
 
 ### quic start
 
